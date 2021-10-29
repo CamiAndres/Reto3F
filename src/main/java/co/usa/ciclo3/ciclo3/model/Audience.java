@@ -90,7 +90,7 @@ public class Audience implements Serializable {
     }
 
  
-   
+   // Relaciones
     @ManyToOne
     @JoinColumn(name="idcategory")
     @JsonIgnoreProperties("audiences")
