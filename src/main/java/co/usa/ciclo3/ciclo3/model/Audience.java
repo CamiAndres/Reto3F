@@ -22,8 +22,8 @@ public class Audience implements Serializable {
     //Generación de atributos necesarios del auditorio
      private String name;
      private String owner;
-     private String description;
      private Integer capacity;
+     private String description;
      
 
     public String getName() {
@@ -41,6 +41,15 @@ public class Audience implements Serializable {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+    
+        public Integer getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
+    }
+    
     public String getDescription() {
         return description;
     }
@@ -48,13 +57,7 @@ public class Audience implements Serializable {
     public void setDescription(String description) {
         this.description = description;
     }
-    public Integer getCapacity() {
-        return capacity;
-    }
 
-    public void setCapacity(Integer capacity) {
-        this.capacity = capacity;
-    }
 
     public Category getCategory() {
         return category;
